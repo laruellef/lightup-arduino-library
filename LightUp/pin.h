@@ -27,10 +27,10 @@ void allOn() {
 }
 
 void allOff() {
-  on(OUTPUT_1);
-  on(OUTPUT_2);
-  on(OUTPUT_3);
-  on(OUTPUT_4);
-  on(OUTPUT_5);
-  on(OUTPUT_6);
+  off(OUTPUT_1);
+  off(OUTPUT_2);
+  off(OUTPUT_3);
+  off(OUTPUT_4);
+  off(OUTPUT_5);
+  off(OUTPUT_6);
 }
