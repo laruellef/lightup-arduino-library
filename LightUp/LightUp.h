@@ -20,7 +20,7 @@
 #define OUTPUT_B 10
 #define OUTPUT_C 9
 #define OUTPUT_D 11
-#define OUTPUT_E 3
+#define OUTPUT_E 13
 #define OUTPUT_F 6
 
 // These pins connect to signal LEDs next to the corresponding input pins. Reading the
@@ -32,7 +32,7 @@
 #define _LU_INPUT_SIGNAL_1 7
 #define _LU_INPUT_SIGNAL_2 2
 #define _LU_INPUT_SIGNAL_3 1
-#define _LU_INPUT_SIGNAL_4 13
+#define _LU_INPUT_SIGNAL_4 3
 #define _LU_INPUT_SIGNAL_5 12
 #define _LU_INPUT_SIGNAL_6 4
 
