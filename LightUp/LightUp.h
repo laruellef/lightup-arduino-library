@@ -200,6 +200,12 @@ void setup() {
 
   // Run the user's setup code. This is normally in the function called "setup"
   // in Arduino code.
+ digitalWrite(_LU_INPUT_SIGNAL_1 7, LOW);
+ digitalWrite(_LU_INPUT_SIGNAL_2 2, LOW);
+ digitalWrite(_LU_INPUT_SIGNAL_3 1, LOW);
+ digitalWrite(_LU_INPUT_SIGNAL_4 3, LOW);
+ digitalWrite(_LU_INPUT_SIGNAL_5 12, LOW);
+ digitalWrite(_LU_INPUT_SIGNAL_6 4, LOW);
   user_setup();
 }
 
