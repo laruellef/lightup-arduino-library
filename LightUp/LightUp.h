@@ -1,6 +1,6 @@
 #ifndef __LIGHTUP_H__
 #define __LIGHTUP_H__
-
+ 
 #include "Arduino.h"
 
 // We're using the Arduino Leonardo's bootloader and configuration so the pin numbers
