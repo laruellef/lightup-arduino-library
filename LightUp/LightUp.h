@@ -128,9 +128,9 @@ ISR(TIMER1_COMPA_vect) {
 // Helper function that only sets signal LEDs when pin is digital.
 static void setSignalLED(uint8_t signalPin, uint8_t inputPin, boolean isAnalog) {
   if (isAnalog) {
-    digitalWrite(signalPin, LOW);
+    digitalWrite(signalPin, !(LOW));
   } else {
-    digitalWrite(signalPin, digitalRead(inputPin));
+    digitalWrite(signalPin, !(digitalRead(inputPin)));
   }
 }
 
