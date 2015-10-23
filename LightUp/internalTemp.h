@@ -1,6 +1,6 @@
 // replace these constants with your 2 data points
 // these are sample values that will get you in the ballpark (in degrees C)
-// take a temperature reading (= LU_internal_temp1) 
+// take a temperature reading (= LU_internal_temp1)
 // and observe the rawData by Serial.println(rawData) (= LU_internal_data1)
 // take another temperature reading (= LU_internal_temp2)
 // and observe the rawData by Serial.println(rawData) (= LU_internal_data2)
@@ -22,7 +22,7 @@ float readTemp() {
   static uint8_t low = ADCL; // must read ADCL first - it then locks ADCH
   static uint8_t high = ADCH; // unlocks both
   static long result = (high << 8) | low; // combine the two
- 
+
   // calculate the scale factor
   static float scaleFactor = (LU_internal_temp2 - LU_internal_temp1) / (LU_internal_data2 - LU_internal_data1);
 
@@ -32,7 +32,7 @@ float readTemp() {
   return LU_internal_temp;
 }
 
-void changeTemp(float temp1, long data1, float temp2 long data2) {
+void changeTemp(float temp1, long data1, float temp2, long data2) {
 
   LU_internal_temp1 = temp1;
   LU_internal_data1 = data1;
